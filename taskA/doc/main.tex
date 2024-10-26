@@ -13,6 +13,9 @@
 \usepackage{float}  % Necesario para [H]
 \usepackage{listings}
 \usepackage{xcolor}
+\usepackage{booktabs} % Para tablas bonitas
+\usepackage[normalem]{ulem}% para tachar
+\usepackage{amsmath}% formulas
 
 \definecolor{codegreen}{HTML}{5AB2FF}
 \definecolor{morado}{HTML}{AD88C6}
@@ -146,13 +149,136 @@ This project will analyze a dataset relevant to disease classification, covering
 
 \section{Methodology and Results}
 
-1. Information about the dataset. Number of samples, number of classes, 
-number of samples per class, if the dataset is balanced or unbalanced…
+\subsection{Dataset Description}
+
+The classification performance of each method, as detailed in Table \ref{tab:performance_metrics}, provides valuable insights into the dataset's characteristics. Specifically, we focus on four key metrics: True Positives (TP), False Positives (FP), False Negatives (FN), and True Negatives (TN). \\
+
+Given that there are only two classifications—positive and negative—we infer that the dataset contains two distinct classes. \\
+
+Method A classifies all tuples as positive, resulting in 100 True Positives. This indicates that there are likely 100 instances belonging to the positive class. Additionally, the presence of 900 False Positives suggests that the remaining tuples are classified as negative, supporting the assumption that there are a total of 900 instances in the negative class. This conclusion is further corroborated by the performance of Method E, which only classifies instances as negative, correctly identifying 900 True Negatives. \\
+
+Overall, the dataset is significantly unbalanced, with a considerable disparity between the number of positive and negative instances. This imbalance poses challenges for classification, making it more difficult for the algorithms to accurately predict the positive class due to the overwhelming presence of negative instances.
+
+\begin{table}[ht]
+	\centering
+	\caption{Performance Metrics for Each Classification Method}
+	\label{tab:performance_metrics}
+	\vspace{0.4cm}
+	\begin{tabular}{@{}cccccc@{}}
+		\toprule
+		\textbf{Method} & \textbf{TP} & \textbf{FP} & \textbf{FN} & \textbf{TN} \\ 
+		\midrule
+		A & 100 & 900 & 0 & 0 \\ 
+		B & 80  & 125 & 20 & 775 \\ 
+		C & 25  & 25  & 75 & 875 \\ 
+		D & 50  & 50  & 50 & 850 \\ 
+		E & 0   & 0   & 100 & 900 \\ 
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\subsection{Metrics Used for Performance Comparison}
+
+In this section, we will explore the various metrics employed to evaluate and compare the performance of different classification methods. Each metric provides insights into the model's strengths and weaknesses, helping us understand how well it performs in various aspects of classification.
+
+\begin{itemize}
+	\item \textbf{Precision (PR)}: Precision is a key metric that measures the accuracy of the positive predictions made by the model. It represents the proportion of True Positives (TP) among all predicted positives, combining both correct and incorrect predictions.
+	
+	\[
+	\text{Precision} = \frac{TP}{TP + FP}
+	\]
+	\textit{Range:} [0, 1]. \\
+	\textit{Better values:} Higher values indicate that a greater proportion of positive predictions are correct, which is desirable in many applications.
+	
+	\item \textbf{Recall (RC)}: Also known as Sensitivity, Recall quantifies the model's ability to identify all relevant instances within the dataset. It is defined as the ratio of True Positives to the total actual positives.
+	
+	\[
+	\text{Recall} = \frac{TP}{TP + FN}
+	\]
+	\textit{Range:} [0, 1]. \\
+	\textit{Better values:} Higher values are preferred, indicating that the model is effective at capturing as many actual positives as possible.
+	
+	\item \textbf{Specificity (SP)}: Specificity assesses how well the model identifies negative instances. It is calculated as the ratio of True Negatives (TN) to the total number of actual negatives.
+	
+	\[
+	\text{Specificity} = \frac{TN}{TN + FP}
+	\]
+	\textit{Range:} [0, 1]. \\
+	\textit{Better values:} Higher values suggest that the model is proficient at correctly identifying negatives, which is crucial for balanced performance.
+	
+	\item \textbf{False Negative Rate (FNR)}: The False Negative Rate indicates the proportion of actual positives that are incorrectly classified as negatives. It highlights the model's shortcomings in capturing positive instances.
+	
+	\[
+	\text{FNR} = \frac{FN}{TP + FN}
+	\]
+	\textit{Range:} [0, 1]. \\
+	\textit{Better values:} Lower values are preferable, as they suggest that fewer true positives are being missed by the model.
+	
+	\item \textbf{False Positive Rate (FPR)}: This metric quantifies the proportion of actual negatives that are mistakenly classified as positives. Understanding the FPR is important for assessing the model's performance in contexts where false alarms are costly.
+	
+	\[
+	\text{FPR} = \frac{FP}{FP + TN}
+	\]
+	\textit{Range:} [0, 1]. \\
+	\textit{Better values:} Lower values are preferred, indicating that the model generates fewer false positives.
+	
+	\item \textbf{Accuracy (ACC)}: Accuracy provides an overall assessment of the model's performance, reflecting the ratio of correctly predicted instances (both TP and TN) to the total instances in the dataset.
+	
+	\[
+	\text{Accuracy} = \frac{TN + TP}{TP + FN + FP + TN}
+	\]
+	\textit{Range:} [0, 1]. \\
+	\textit{Better values:} Higher values indicate a more effective model, although accuracy alone may not provide a complete picture in imbalanced datasets.
+	
+	\item \textbf{Spatial Accuracy (S) or Jaccard Index (J)}: This metric evaluates the similarity between the predicted positive instances and the actual positives. It is particularly useful for assessing how well the model performs in terms of agreement with the ground truth.
+	
+	\[
+	\text{Jaccard Index} = \frac{TP}{TP + FN + FP}
+	\]
+	\textit{Range:} [0, 1]. \\
+	\textit{Better values:} Higher values signify better alignment between predicted and actual positives.
+	
+	\item \textbf{F-measure (Fm)}: The F-measure provides a balanced score that incorporates both Precision and Recall. It is defined as the harmonic mean of these two metrics, making it a valuable indicator of model performance.
+	
+	\[
+	\text{F-measure} = \frac{2 \cdot PR \cdot RC}{PR + RC}
+	\]
+	\textit{Range:} [0, 1]. \\
+	\textit{Better values:} Higher values suggest that the model performs well in both precision and recall, making it effective for a wide range of applications.
+\end{itemize}
+To provide a concise overview of the metrics described earlier, Table \ref{tab:metrics_summary} summarizes each metric, its definition, range, and whether higher or lower values are preferable. This table serves as a quick reference to understand how these metrics contribute to performance evaluation in classification tasks.
 
 
-2. Information about the metrics you will use to compare the performance 
-of the methods. Name, what it represents, its definition, range of the 
-value provided by that metric, if lower/higher values are better…
+\renewcommand{\arraystretch}{1.5} % Increase row height
+\begin{table}[ht]
+	\centering
+	\caption{Summary of Metrics Used for Performance Evaluation}
+	\label{tab:metrics_summary}
+	\vspace{0.4cm}
+	\begin{tabular}{@{}p{3cm}p{4cm}c p{2cm}c@{}}
+		\toprule
+		\textbf{Metric} & \textbf{Definition} & \textbf{Formula} & \textbf{Range} & \textbf{Better Values} \\ 
+		\midrule
+		Precision (PR) & Accuracy of positive predictions & $\frac{TP}{TP + FP}$ & [0, 1] & Higher \\ 
+		Recall (RC) & Ability to identify relevant instances & $\frac{TP}{TP + FN}$ & [0, 1] & Higher \\ 
+		Specificity (SP) & Identifying negative instances correctly & $\frac{TN}{TN + FP}$ & [0, 1] & Higher \\ 
+		False Negative Rate (FNR) & Proportion of actual positives missed & $\frac{FN}{TP + FN}$ & [0, 1] & Lower \\ 
+		False Positive Rate (FPR) & Proportion of actual negatives misclassified & $\frac{FP}{FP + TN}$ & [0, 1] & Lower \\ 
+		Accuracy (ACC) & Overall correctness of predictions & $\frac{TN + TP}{TP + FN + FP + TN}$ & [0, 1] & Higher \\ 
+		Jaccard Index (J) & Similarity between predicted and actual positives & $\frac{TP}{TP + FN + FP}$ & [0, 1] & Higher \\ 
+		F-measure (Fm) & Balance between Precision and Recall & $\frac{2 \cdot PR \cdot RC}{PR + RC}$ & [0, 1] & Higher \\ 
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\section{todoList}
+\sout{1. Information about the dataset. Number of samples, number of classes, 
+number of samples per class, if the dataset is balanced or unbalanced…}
+
+
+\sout{2. Information about the metrics you will use to compare the performance 
+	of the methods. Name, what it represents, its definition, range of the 
+	value provided by that metric, if lower/higher values are better…}
 
 
 3. A table with the yielded performance of each method for each metric. 
@@ -164,8 +290,8 @@ the rows. Highlight best results in bold.
 method is the best and the worst, and why.
 
 
-5. Conclusion. According to the analysis, determine which method, in 
-general, is the best and why
+5. Conclusion. According to the analysis, determine which method, in general, is the best and why\\
+
 
 
 
