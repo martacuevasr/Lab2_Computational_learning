@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.9.27)  26 OCT 2024 19:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.9.27)  27 OCT 2024 00:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -476,29 +476,128 @@ Underfull \hbox (badness 4467) in paragraph at lines 268--268
 []|\T1/cmr/m/n/10 Similarity be-tween pre-
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 275--277
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 276--278
 
  []
-
-[4]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [5
 pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.319 	
-       ] [6
+l.301 
+      ]
+Underfull \hbox (badness 10000) in paragraph at lines 303--305
+
+ []
+
+<images/heatmap.png, id=100, 704.6325pt x 401.8212pt>
+File: images/heatmap.png Graphic file (type png)
+<use images/heatmap.png>
+Package pdftex.def Info: images/heatmap.png  used on input line 308.
+(pdftex.def)             Requested size: 469.75502pt x 267.88217pt.
+[6
 pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.351 
-      ]
-Underfull \hbox (badness 10000) in paragraph at lines 357--358
+l.312 
+      ] [7
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.334 	\item \textbf
+                    {Accuracy (ACC):} \\ <./images/heatmap.png>]
+<images/FN-FP.png, id=114, 509.5035pt x 401.8212pt>
+File: images/FN-FP.png Graphic file (type png)
+<use images/FN-FP.png>
+Package pdftex.def Info: images/FN-FP.png  used on input line 348.
+(pdftex.def)             Requested size: 211.38832pt x 166.70976pt.
+<images/PR-RC.png, id=115, 506.6127pt x 401.8212pt>
+File: images/PR-RC.png Graphic file (type png)
+<use images/PR-RC.png>
+Package pdftex.def Info: images/PR-RC.png  used on input line 354.
+(pdftex.def)             Requested size: 211.38832pt x 167.66011pt.
+<images/ACC-Fm.png, id=116, 506.6127pt x 401.8212pt>
+File: images/ACC-Fm.png Graphic file (type png)
+<use images/ACC-Fm.png>
+Package pdftex.def Info: images/ACC-Fm.png  used on input line 360.
+(pdftex.def)             Requested size: 211.38832pt x 167.66011pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 369--371
+
+ []
+
+[8
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.371 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.371 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.371 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.371 
+       <./images/FN-FP.png> <./images/PR-RC.png> <./images/ACC-Fm.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 372--374
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 375--377
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 378--380
+
+ []
+
+<images/radar.png, id=131, 602.0091pt x 497.9403pt>
+File: images/radar.png Graphic file (type png)
+<use images/radar.png>
+Package pdftex.def Info: images/radar.png  used on input line 384.
+(pdftex.def)             Requested size: 469.75502pt x 388.55142pt.
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 389--391
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 392--394
+
+ []
+
+[10
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.401 \sout
+           {2. Information about the metrics you will use to compare the per...
+ <./images/radar.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 415--416
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 421--426
 
  []
 
@@ -513,18 +612,18 @@ Underfull \hbox (badness 7649) in paragraph at lines 4--9
 0 https : / / github . com / martacuevasr / Lab2 _
  []
 
-) [7] (./main.aux)
+) [11] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: BF98ABB06DBB4E3E405070F8B45925E0;1398.
+(rerunfilecheck)             Checksum: 3C50C22AD4F3407AEB9D41D2281041F1;1564.
  ) 
 Here is how much of TeX's memory you used:
- 11372 strings out of 476091
- 174828 string characters out of 5794081
- 1872330 words of memory out of 5000000
- 31572 multiletter control sequences out of 15000+600000
+ 11427 strings out of 476091
+ 175715 string characters out of 5794081
+ 1868330 words of memory out of 5000000
+ 31611 multiletter control sequences out of 15000+600000
  524112 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,10n,76p,712b,513s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,10n,76p,771b,509s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/
 fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
@@ -540,10 +639,10 @@ nts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-
 super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb><
 /usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fon
 ts/type1/public/cm-super/sftt1000.pfb>
-Output written on main.pdf (8 pages, 1130131 bytes).
+Output written on main.pdf (12 pages, 1345562 bytes).
 PDF statistics:
- 195 PDF objects out of 1000 (max. 8388607)
- 149 compressed objects within 2 object streams
- 24 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 234 PDF objects out of 1000 (max. 8388607)
+ 174 compressed objects within 2 object streams
+ 34 named destinations out of 1000 (max. 500000)
+ 111 words of extra memory for PDF output out of 10000 (max. 10000000)
 

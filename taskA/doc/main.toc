@@ -3,8 +3,8 @@
 \contentsline {section}{\numberline {3}Methodology and Results}{2}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Dataset Description}{2}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Metrics Used for Performance Comparison}{3}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}el punto tres ese}{5}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Performance Analysis}{5}{subsection.3.4}%
-\contentsline {section}{\numberline {4}todoList}{6}{section.4}%
-\contentsline {section}{\numberline {5}Conclusion}{7}{section.5}%
-\contentsline {section}{\numberline {6}Repository Access}{7}{section.6}%
+\contentsline {subsection}{\numberline {3.3}Comparative Performance of Methods Across Metrics}{5}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Performance Analysis}{7}{subsection.3.4}%
+\contentsline {section}{\numberline {4}todoList}{11}{section.4}%
+\contentsline {section}{\numberline {5}Conclusion}{11}{section.5}%
+\contentsline {section}{\numberline {6}Repository Access}{11}{section.6}%

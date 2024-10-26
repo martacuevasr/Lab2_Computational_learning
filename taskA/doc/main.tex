@@ -159,7 +159,7 @@ Method A classifies all tuples as positive, resulting in 100 True Positives. Thi
 
 Overall, the dataset is significantly unbalanced, with a considerable disparity between the number of positive and negative instances. This imbalance poses challenges for classification, making it more difficult for the algorithms to accurately predict the positive class due to the overwhelming presence of negative instances.
 
-\begin{table}[ht]
+\begin{table}[!ht]
 	\centering
 	\caption{Performance Metrics for Each Classification Method}
 	\label{tab:performance_metrics}
@@ -250,7 +250,7 @@ To provide a concise overview of the metrics described earlier, Table \ref{tab:m
 
 
 \renewcommand{\arraystretch}{1.5} % Increase row height
-\begin{table}[ht]
+\begin{table}[H]
 	\centering
 	\caption{Summary of Metrics Used for Performance Evaluation}
 	\label{tab:metrics_summary}
@@ -271,13 +271,14 @@ To provide a concise overview of the metrics described earlier, Table \ref{tab:m
 	\end{tabular}
 \end{table}
 
-\subsection{el punto tres ese}
-explicar esto
+\subsection{Comparative Performance of Methods Across Metrics}
+
+This section presents a detailed comparative analysis of the methods evaluated based on various performance metrics. Each method's results are organized into a table, where the rows represent distinct metrics and the columns denote the different methods. Highlighted in bold are the best results for each metric, offering an at-a-glance insight into the highest-performing methods. This comparative structure facilitates an easier identification of which method excels in each aspect, providing a comprehensive view of the strengths and weaknesses across different evaluation parameters.
 \\
 
-  \begin{table}[h!]
+\begin{table}[H]
 	\centering
-	\begin{tabular}{|c|c|c|c|c|c|}
+	\begin{tabular}{@{}cccccc@{}}
 		\hline
 		\textbf{Metric} & \textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} & \textbf{E} \\
 		\hline
@@ -298,6 +299,16 @@ explicar esto
 	\caption{Performance metrics for each method with the best values highlighted in bold}
 \end{table}
 
+
+To provide a more visually intuitive overview of the data, we will present the metrics in a heatmap. This allows us to easily compare the performance of each method across all metrics at once, with color gradients highlighting areas of high and low values. Using a heatmap enables quick identification of strengths and weaknesses for each method, helping to clarify performance trends and facilitating more effective comparisons.
+\\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{images/heatmap.png}
+	\caption{Heatmap for metrics for each method}
+	\label{fig:heatmap}
+\end{figure}
 
 
 \subsection{Performance Analysis}
@@ -330,9 +341,56 @@ For each metric, the following analysis highlights the best and worst methods, w
 	The highest F-measure is obtained by Method B (0.5246), showing a solid balance between precision and recall. Method E, again, scores the lowest (0.0), as it fails to identify any positives.
 \end{itemize}
 
-In summary, Method B demonstrates the most balanced performance across metrics, effectively combining precision and recall. In contrast, Method E consistently ranks the lowest across metrics that measure positive classification, only excelling in identifying negatives.
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{images/FN-FP.png}
+		\caption{False Negatives VS False Positives}
+		\label{fig:FN-FP}
+	\end{minipage}\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{images/PR-RC.png}
+		\caption{Precision VS Recall}
+		\label{fig:PR-RC}
+	\end{minipage}
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{images/ACC-Fm.png}
+		\caption{Accuracy VS F-measure}
+		\label{fig:ACC-Fm}
+	\end{minipage}\hfill
 
+	\caption{Comparison of methods}
+	\label{fig:comparison}
+\end{figure}
 
+The FN vs FP plot (\ref{fig:FN-FP}) shows that Method A, with the highest false positives and zero false negatives, favors capturing all positives but at the cost of many false positives. In contrast, Method E has no false positives but misses all positives, resulting in high false negatives. Methods C and D provide a better balance, with lower and relatively similar counts of false positives and false negatives. Among these, Method D appears to offer the best trade-off between reducing both error types.
+\\
+
+In the plot \ref{fig:PR-RC} that shows PR vs RC, Method A achieves high recall with very low precision, while Method E has both values at zero, reflecting its negative-only classification. Method B shows the best balance, with high recall and moderate precision, making it favorable in cases needing high recall. Methods C and D each have a precision of 0.5, but Method D achieves a more balanced performance overall, with equal precision and recall scores.
+\\
+
+The ACC vs Fm comparison in plot \ref{fig:ACC-Fm} shows that Methods C, D, and E achieve high accuracy, though only Method D balances this with a strong F-measure. Method B achieves the highest F-measure, indicating good precision and recall, though its accuracy is slightly lower than the others. Method A, with the lowest accuracy and F-measure, is less effective overall.
+\\
+
+To gain a more comprehensive view of each method's strengths and weaknesses, we included a radar plot of all metrics, offering an at-a-glance comparison. This visual highlights the varying performance across precision, recall, specificity, accuracy, false positive rate, and other metrics, making it easier to observe each method’s unique performance profile.
+\\
+
+\begin{figure}[H]
+	
+	\centering
+	\includegraphics[width=\textwidth]{images/radar.png}
+	\caption{Radar Plot of Classification Metrics}
+	\label{fig:radar}
+\end{figure}
+
+In the radar plot \ref{fig:radar}, Method A stands out with its perfect recall but shows a sharp decline in precision, specificity, and accuracy, reinforcing its strategy of capturing all positives while sacrificing specificity and precision. Method B covers a broader area across most metrics, achieving high recall and moderate values in other metrics, making it the most balanced performer. Methods C and D show comparable profiles, though Method D consistently performs better in balancing precision, recall, and specificity, suggesting it as the most well-rounded choice among the high-accuracy methods. Method E has strong specificity but low values across most other metrics, aligning with its purely negative classification strategy.
+\\
+
+Overall, the radar plot offers a clear summary of each method’s performance, visually confirming that Method B provides the most balanced approach, while Method D remains the best choice for cases needing both high accuracy and strong class balance across metrics.
+\\
 
 
 \section{todoList}
@@ -364,7 +422,20 @@ following figures:
 - FN against FP
 - PR against RC
 - ACC against Fm 
+\\
+
 \section{Conclusion}
+In this study, we compared five classification methods (A, B, C, D, and E) based on a set of performance metrics to determine their effectiveness in handling an imbalanced dataset, particularly in the context of disease prediction. The results indicate varying levels of performance across precision, recall, and F-measure, with Method B emerging as the most balanced.
+
+\begin{itemize}
+	\item \textbf{Method B}: Demonstrates the best overall balance across precision, recall, and the F-measure, making it a strong candidate for situations requiring sensitivity to both positive identification and precision.
+	\item \textbf{Method A}: Maximizes recall but at the cost of an extremely high false positive rate, making it unsuitable where specificity is essential.
+	\item \textbf{Method E}: Achieves the highest specificity and minimizes the false positive rate but fails to detect any positives, making it impractical for applications that require positive detection.
+	\item \textbf{Methods C and D}: Strike some balance between precision and specificity but lack the robustness seen in Method B.
+\end{itemize}
+
+
+In summary, Method B is the most effective classification method for this dataset based on its high F-measure, balanced precision, and recall. This approach is recommended for predictive tasks where both the accurate identification of positives and the minimization of false positives are essential, even within an imbalanced dataset context.
 
 
 \section{Repository Access}
