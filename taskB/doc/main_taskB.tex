@@ -1,0 +1,178 @@
+\documentclass{article}
+\usepackage{fullpage}
+
+%load needed packages
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+
+
+\usepackage{float}  % Necesario para [H]
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{HTML}{5AB2FF}
+\definecolor{morado}{HTML}{AD88C6}
+\definecolor{BG}{HTML}{EEEEEE}
+\definecolor{azul}{HTML}{4D869C}
+\definecolor{sqlblue}{HTML}{FF8C00} % Color para las palabras clave SQL
+\usepackage{listings}
+\usepackage{xcolor}
+
+
+%estilo python
+\usepackage{xcolor}
+
+% Define the colors for the style
+\definecolor{BG}{rgb}{0.95,0.95,0.95}  % Background color
+\definecolor{keywordcolor}{rgb}{0.0,0.0,1.0} % Blue for keywords
+\definecolor{commentcolor}{rgb}{0.0,0.5,0.0} % Green for comments
+\definecolor{stringcolor}{rgb}{1.0,0.0,0.0}  % Red for strings
+\definecolor{attributecolor}{rgb}{0.8,0.3,0.8} % Purple for attributes
+\definecolor{importcolor}{rgb}{0.0,0.6,0.6} % Teal for import statements
+
+% Define the style for Python code
+\lstdefinestyle{mypython}{
+	backgroundcolor=\color{BG},   % Background color
+	basicstyle=\footnotesize\ttfamily,  
+	breaklines=true,                  
+	language=Python,                  
+	keywordstyle=\color{keywordcolor},    
+	commentstyle=\color{commentcolor}, 
+	stringstyle=\color{stringcolor},
+	frame=shadowbox, 
+	morekeywords={model},  % Add 'model' to keywords
+	keywordstyle=[2]\color{importcolor}, % Color for import statements
+	sensitive=true,       % Case sensitive
+	morecomment=[s]{"""}{"} % Allows for multi-line strings
+}
+
+
+
+\lstset{style=mypython}
+% Estilo para DDL
+\lstdefinestyle{ddlstyle}{
+	language=SQL,
+	backgroundcolor=\color{BG},
+	commentstyle=\color{codegreen},
+	basicstyle=\ttfamily\small,
+	keywordstyle=\color{azul},
+	stringstyle=\color{morado},
+	showstringspaces=false,
+	breaklines=true,
+	frame=shadowbox,
+	numbers=left,
+	numberstyle=\tiny\color{gray},
+	captionpos=b,
+}
+
+% Estilo para SQL
+\lstdefinestyle{sqlstyle}{
+	language=SQL,
+	backgroundcolor=\color{BG},
+	commentstyle=\color{codegreen},
+	basicstyle=\ttfamily\small,
+	keywordstyle=\color{sqlblue}, % Color diferente para palabras clave SQL
+	stringstyle=\color{morado},
+	showstringspaces=false,
+	breaklines=true,
+	frame=shadowbox,
+	numbers=left,
+	numberstyle=\tiny\color{gray},
+	captionpos=b,
+}
+
+\begin{document}
+
+
+
+% Portada
+\begin{titlepage}
+	\centering
+	\vspace*{3cm}
+	
+	% Título destacado
+	{\Huge \textbf{Lab 2}\\[0.5cm]}
+
+	{\Huge \textbf{Task B: Supervised Learning}\\[0.5cm]}
+	
+	% Espacio y logotipo (si lo tienes, por ejemplo el logo de tu universidad)
+	\vspace{2cm}
+	\includegraphics[width=0.3\textwidth]{images/uma_logo.jpg}\\[1cm]
+	
+	% Nombre del autor
+	{\LARGE \textbf{Alejandro Silva Rodríguez}\\[0.5cm]}
+	{\LARGE \textbf{Marta Cuevas Rodríguez}\\[0.5cm]}
+	{\large \textit{Aprendizaje Computacional}\\
+		Universidad de Málaga\\
+		}
+	
+	\vfill
+	
+	% Fecha en la parte inferior de la página
+	{\large October 2024}
+\end{titlepage}
+
+% indice
+\tableofcontents
+
+\newpage
+
+\section{Introduction}
+
+This project explores both fundamental and advanced concepts in supervised learning, placing a particular emphasis on the significant potential of Deep Learning in biomedical fields. Supervised learning, a technique where models learn to classify or predict outcomes based on labeled data, is foundational in machine learning, particularly for applications involving complex classification tasks. However, with the advent of Deep Learning, models now have the capacity to process and analyze high-dimensional data with enhanced accuracy and flexibility, making them highly effective in medical and health-related applications.
+
+In this project, we begin by examining essential concepts, such as partitioning datasets into training and testing sets to evaluate model generalizability, and the use of cross-validation to optimize model performance. We then delve into the structure of neural networks, differentiating traditional feed-forward networks from more advanced architectures used in Deep Learning. These modern architectures—characterized by multiple hidden layers, complex connections, and sophisticated activation functions—enable models to learn hierarchical representations of data, capturing intricate patterns and dependencies.
+
+Moreover, this project addresses critical challenges that arise when applying Deep Learning to biomedical contexts. These include the risk of overfitting, where models may perform well on training data but fail to generalize to new data, and the common issue of data scarcity, given the limited availability of labeled biomedical datasets. We will explore techniques to alleviate these challenges, such as regularization, data augmentation, and synthetic data generation, which expand the training dataset and improve model robustness.
+
+Finally, we will review recent advancements in Deep Learning applied to healthcare, showcasing examples where such models have significantly improved diagnostics, disease prediction, and patient outcomes. This project aims to build a comprehensive understanding of how supervised learning, and Deep Learning in particular, can drive impactful changes in the healthcare sector.
+
+\subsection{Objectives}
+
+\begin{itemize}
+	\item \textbf{Develop a foundational understanding of supervised learning techniques}: Explore how supervised learning methods work, emphasizing their role in solving classification tasks in healthcare.
+	
+	\item \textbf{Examine Deep Learning concepts and architectures}: Differentiate traditional feed-forward networks from advanced Deep Learning architectures, analyzing the benefits of additional hidden layers, complex connections, and hierarchical data representation.
+	
+	\item \textbf{Understand data partitioning and evaluation}: Learn the importance of splitting datasets into training and test sets to ensure model performance generalizes to new data, and explore cross-validation as a technique to further enhance reliability and robustness.
+	
+	\item \textbf{Implement overfitting prevention techniques}: Identify strategies to reduce overfitting, such as regularization, dropout, and early stopping, ensuring that models perform well not only on training data but also on new, unseen data.
+	
+	\item \textbf{Address data scarcity through data augmentation and synthetic data generation}: Explore how data scarcity impacts biomedical applications and implement data augmentation and synthetic data generation techniques to expand limited datasets and enhance model accuracy.
+	
+	\item \textbf{Analyze real-world applications of Deep Learning in healthcare}: Review case studies where Deep Learning has been successfully applied in the medical field, such as diagnostics and predictive models for disease progression, highlighting its potential to transform patient care.
+\end{itemize}
+
+\section{Methodology and Results}
+
+LAS PREGUNTAS QUE PONE EL PROFE A RESOLVER MEDIO RESUELTAS
+- When developing a supervised method, why do we need to split the dataset into training and test sets? para obtener metricas de como funciona muestro modelo con datos con los que no ha sido entrenados porque sino no seria una comparación honesta
+- What is cross-validation? para que sea honesta la estimacion de la performance
+- What is artificial neural networks? pue rede neuronales artificiales. inserta textaco y citas
+- What is Deep Learning (DL)? lo mismo pero con muchos datos y a lo mejor modelos mas buenos tipo transformers  y esas cosas
+- What is new in DL models with respect to traditional feedforward neural networks? supongo que los modelos son mas complejos pero ni idea
+- Google (among others) has produced astonishing results in the 
+application of DL models in different domains. Mention two of these cases describing shortly the problem solved. \textbf{Alphafold Gemini} inserta textaco y referenxias
+- What is overfitting and how DL models avoid it? es cuando tu modelo deja de generalizar y se aprende los datos concretos con los que se alimenta y hace que no sirva para nada. se soluciona con muchos datos diferentes, o capas de normalizacion y esa vaina
+- Lack of data is a big limitation regarding the application of DL 
+models to biomedical problems. What techniques can be applied 
+to alleviate this problem.
+
+data augmentation techniques. pues cosas de estadistica o darle la vuelta a las imagenes o generar datos con otra ia . por ejemplo la adversative neural network q dijo el profe que creo que enfrenta a dos nn a ver cual inventa cosas mejor
+\section{Conclusion}
+
+
+\section{Repository Access}
+
+All additional information, including the source code and full documentation of this project, is available in the GitHub repository \cite{cuevas2024github}.
+
+
+% Incluir la bibliografía
+\bibliographystyle{plain}  % Estilo de la bibliografía (por ejemplo, plain, alpha, ieee, etc.)
+\bibliography{bibli}  % Nombre del archivo .bib sin la extensión
+
+\end{document}

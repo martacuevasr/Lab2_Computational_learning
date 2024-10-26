@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.9.27)  26 OCT 2024 14:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.9.27)  26 OCT 2024 14:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**main.tex
-(./main.tex
+**main_taskB.tex
+(./main_taskB.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-01-16>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -289,8 +289,8 @@ File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count283
 \l__pdf_internal_box=\box57
 )
-(./main.aux)
-\openout1 = `main.aux'.
+(./main_taskB.aux)
+\openout1 = `main_taskB.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 88.
 LaTeX Font Info:    ... okay on input line 88.
@@ -310,7 +310,8 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 88.
 LaTeX Font Info:    ... okay on input line 88.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 88.
 LaTeX Font Info:    ... okay on input line 88.
- (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count284
 \scratchdimen=\dimen166
@@ -334,70 +335,71 @@ e
 ))
 Package hyperref Info: Link coloring OFF on input line 88.
 
-(./main.out) (./main.out)
+(./main_taskB.out) (./main_taskB.out)
 \@outlinefile=\write3
-\openout3 = `main.out'.
+\openout3 = `main_taskB.out'.
 
 \c@lstlisting=\count290
 <images/uma_logo.jpg, id=24, 965.6075pt x 965.6075pt>
 File: images/uma_logo.jpg Graphic file (type jpg)
 <use images/uma_logo.jpg>
-Package pdftex.def Info: images/uma_logo.jpg  used on input line 103.
+Package pdftex.def Info: images/uma_logo.jpg  used on input line 104.
 (pdftex.def)             Requested size: 140.92793pt x 140.91563pt.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/uma_logo.jpg>] (.
-/main.toc)
+/main_taskB.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 2.
+)
 \tf@toc=\write4
-\openout4 = `main.toc'.
+\openout4 = `main_taskB.toc'.
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.121 \newpage
-               [1] (./main.bbl [2]
+l.122 \newpage
+               [1] [2] (./main_taskB.bbl
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 6
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 6.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 6.
-
 Underfull \hbox (badness 7649) in paragraph at lines 4--9
 []\T1/cmr/m/n/10 Marta Cuevas.  Lab2_computational_learning.  []$\T1/cmtt/m/n/1
 0 https : / / github . com / martacuevasr / Lab2 _
  []
 
-) [3] (./main.aux)
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C5FB5EBC4B2CBC003CF4118822CBD1BC;584.
+) [3] (./main_taskB.aux)
+Package rerunfilecheck Info: File `main_taskB.out' has not changed.
+(rerunfilecheck)             Checksum: A212B3CAF77F73E57411AF1FEA2A5E7E;598.
  ) 
 Here is how much of TeX's memory you used:
- 10508 strings out of 476091
- 162850 string characters out of 5794081
- 1859330 words of memory out of 5000000
+ 10509 strings out of 476091
+ 163017 string characters out of 5794081
+ 1861330 words of memory out of 5000000
  30750 multiletter control sequences out of 15000+600000
- 520556 words of font info for 44 fonts, out of 8000000 for 9000
+ 521332 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,5n,76p,712b,472s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,5n,76p,662b,472s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/
 fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf/fonts/type1/public/
-cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pf
-b></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/
-fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/c
-m-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb
-></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/f
-onts/type1/public/cm-super/sftt1000.pfb>
-Output written on main.pdf (4 pages, 1026272 bytes).
+cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pf
+b></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/
+fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/c
+m-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb
+></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/f
+onts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm
+-super/sftt1000.pfb>
+Output written on main_taskB.pdf (4 pages, 1039205 bytes).
 PDF statistics:
- 104 PDF objects out of 1000 (max. 8388607)
- 79 compressed objects within 1 object stream
+ 109 PDF objects out of 1000 (max. 8388607)
+ 82 compressed objects within 1 object stream
  12 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
