@@ -7,4 +7,21 @@ Marta Cuevas.
   2024.
 \newblock Último acceso: 1 noviembre 2024.
 
+\bibitem{flach2015evaluation}
+Peter~A. Flach and Meelis Kull.
+\newblock Precision-recall-gain curves: Pr analysis done right.
+\newblock {\em Advances in Neural Information Processing Systems}, 27, 2015.
+
+\bibitem{powers2011evaluation}
+David~Martin Powers.
+\newblock {\em Evaluation: From Precision, Recall and F-measure to ROC,
+  Informedness, Markedness \& Correlation}.
+\newblock Springer, 2011.
+
+\bibitem{sokolova2009systematic}
+Marina Sokolova and Guy Lapalme.
+\newblock A systematic analysis of performance measures for classification
+  tasks.
+\newblock {\em Information Processing \& Management}, 45(4):427--437, 2009.
+
 \end{thebibliography}

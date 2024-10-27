@@ -5,6 +5,5 @@
 \contentsline {subsection}{\numberline {3.2}Metrics Used for Performance Comparison}{3}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Comparative Performance of Methods Across Metrics}{5}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}Performance Analysis}{7}{subsection.3.4}%
-\contentsline {section}{\numberline {4}todoList}{11}{section.4}%
-\contentsline {section}{\numberline {5}Conclusion}{11}{section.5}%
-\contentsline {section}{\numberline {6}Repository Access}{11}{section.6}%
+\contentsline {section}{\numberline {4}Conclusion}{10}{section.4}%
+\contentsline {section}{\numberline {5}Repository Access}{10}{section.5}%

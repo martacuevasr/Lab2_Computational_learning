@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.9.27)  27 OCT 2024 00:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.9.27)  27 OCT 2024 14:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -361,76 +361,97 @@ LaTeX Info: Redefining \Relbar on input line 971.
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 )
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2022/01/07 v1.5 Sub-captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+\caption@tempdima=\dimen178
+\captionmargin=\dimen179
+\caption@leftmargin=\dimen180
+\caption@rightmargin=\dimen181
+\caption@width=\dimen182
+\caption@indent=\dimen183
+\caption@parindent=\dimen184
+\caption@hangindent=\dimen185
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count296
+\c@continuedfloat=\count297
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+)
+\c@subfigure=\count298
+\c@subtable=\count299
+)
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count296
+\l__color_backend_stack_int=\count300
 \l__pdf_internal_box=\box62
 )
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count297
-\scratchdimen=\dimen178
+\scratchcounter=\count301
+\scratchdimen=\dimen186
 \scratchbox=\box63
-\nofMPsegments=\count298
-\nofMParguments=\count299
+\nofMPsegments=\count302
+\nofMParguments=\count303
 \everyMPshowfont=\toks29
-\MPscratchCnt=\count300
-\MPscratchDim=\dimen179
-\MPnumerator=\count301
-\makeMPintoPDFobject=\count302
+\MPscratchCnt=\count304
+\MPscratchDim=\dimen187
+\MPnumerator=\count305
+\makeMPintoPDFobject=\count306
 \everyMPtoPDFconversion=\toks30
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-
-(/usr/share/texlive/texmf-dist/tex/latex/grfext/grfext.sty
-Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
-)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 504.
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 91.
+Package hyperref Info: Link coloring OFF on input line 92.
 
 (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
-\c@lstlisting=\count303
-<images/uma_logo.jpg, id=44, 965.6075pt x 965.6075pt>
+\c@lstlisting=\count307
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+<images/uma_logo.jpg, id=40, 965.6075pt x 965.6075pt>
 File: images/uma_logo.jpg Graphic file (type jpg)
 <use images/uma_logo.jpg>
-Package pdftex.def Info: images/uma_logo.jpg  used on input line 106.
+Package pdftex.def Info: images/uma_logo.jpg  used on input line 107.
 (pdftex.def)             Requested size: 140.92793pt x 140.91563pt.
  [1
 
@@ -444,160 +465,123 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.124 \newpage
+l.125 \newpage
                [1]
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--157
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 158--159
+Underfull \hbox (badness 10000) in paragraph at lines 159--160
 
  []
 
-[2] [3
-pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
- been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.210 	
-       ]
-Underfull \hbox (badness 4859) in paragraph at lines 264--264
+[2] [3]
+Underfull \hbox (badness 4859) in paragraph at lines 267--267
 []|\T1/cmr/m/n/10 Identifying neg-a-tive in-
  []
 
 
-Underfull \hbox (badness 4467) in paragraph at lines 268--268
+Underfull \hbox (badness 4467) in paragraph at lines 271--271
 []|\T1/cmr/m/n/10 Similarity be-tween pre-
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 276--278
+Underfull \hbox (badness 10000) in paragraph at lines 279--281
 
  []
 
-[5
-pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has
- been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.301 
-      ]
-Underfull \hbox (badness 10000) in paragraph at lines 303--305
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 306--308
 
  []
 
-<images/heatmap.png, id=100, 704.6325pt x 401.8212pt>
+<images/heatmap.png, id=109, 704.6325pt x 401.8212pt>
 File: images/heatmap.png Graphic file (type png)
 <use images/heatmap.png>
-Package pdftex.def Info: images/heatmap.png  used on input line 308.
-(pdftex.def)             Requested size: 469.75502pt x 267.88217pt.
-[6
-pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has
- been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.312 
-      ] [7
-pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.334 	\item \textbf
-                    {Accuracy (ACC):} \\ <./images/heatmap.png>]
-<images/FN-FP.png, id=114, 509.5035pt x 401.8212pt>
+Package pdftex.def Info: images/heatmap.png  used on input line 311.
+(pdftex.def)             Requested size: 328.82707pt x 187.51323pt.
+[6 <./images/heatmap.png>]
+<images/confusion_matrixA.png, id=119, 331.7193pt x 290.5254pt>
+File: images/confusion_matrixA.png Graphic file (type png)
+<use images/confusion_matrixA.png>
+Package pdftex.def Info: images/confusion_matrixA.png  used on input line 320.
+(pdftex.def)             Requested size: 140.92793pt x 123.42953pt.
+<images/confusion_matrixB.png, id=120, 331.7193pt x 290.5254pt>
+File: images/confusion_matrixB.png Graphic file (type png)
+<use images/confusion_matrixB.png>
+Package pdftex.def Info: images/confusion_matrixB.png  used on input line 322.
+(pdftex.def)             Requested size: 140.92793pt x 123.42953pt.
+<images/confusion_matrixC.png, id=121, 331.7193pt x 290.5254pt>
+File: images/confusion_matrixC.png Graphic file (type png)
+<use images/confusion_matrixC.png>
+Package pdftex.def Info: images/confusion_matrixC.png  used on input line 324.
+(pdftex.def)             Requested size: 140.92793pt x 123.42953pt.
+<images/confusion_matrixD.png, id=122, 331.7193pt x 290.5254pt>
+File: images/confusion_matrixD.png Graphic file (type png)
+<use images/confusion_matrixD.png>
+Package pdftex.def Info: images/confusion_matrixD.png  used on input line 326.
+(pdftex.def)             Requested size: 140.92793pt x 123.42953pt.
+<images/confusion_matrixE.png, id=123, 331.7193pt x 290.5254pt>
+File: images/confusion_matrixE.png Graphic file (type png)
+<use images/confusion_matrixE.png>
+Package pdftex.def Info: images/confusion_matrixE.png  used on input line 328.
+(pdftex.def)             Requested size: 140.92793pt x 123.42953pt.
+ [7 <./images/confusion_matrixA.png> <./images/confusion_matrixB.png> <./images
+/confusion_matrixC.png> <./images/confusion_matrixD.png> <./images/confusion_ma
+trixE.png>]
+<images/FN-FP.png, id=135, 509.5035pt x 401.8212pt>
 File: images/FN-FP.png Graphic file (type png)
 <use images/FN-FP.png>
-Package pdftex.def Info: images/FN-FP.png  used on input line 348.
-(pdftex.def)             Requested size: 211.38832pt x 166.70976pt.
-<images/PR-RC.png, id=115, 506.6127pt x 401.8212pt>
+Package pdftex.def Info: images/FN-FP.png  used on input line 367.
+(pdftex.def)             Requested size: 173.80705pt x 137.0711pt.
+<images/PR-RC.png, id=136, 506.6127pt x 401.8212pt>
 File: images/PR-RC.png Graphic file (type png)
 <use images/PR-RC.png>
-Package pdftex.def Info: images/PR-RC.png  used on input line 354.
-(pdftex.def)             Requested size: 211.38832pt x 167.66011pt.
-<images/ACC-Fm.png, id=116, 506.6127pt x 401.8212pt>
+Package pdftex.def Info: images/PR-RC.png  used on input line 374.
+(pdftex.def)             Requested size: 173.80705pt x 137.85591pt.
+<images/ACC-Fm.png, id=137, 506.6127pt x 401.8212pt>
 File: images/ACC-Fm.png Graphic file (type png)
 <use images/ACC-Fm.png>
-Package pdftex.def Info: images/ACC-Fm.png  used on input line 360.
-(pdftex.def)             Requested size: 211.38832pt x 167.66011pt.
+Package pdftex.def Info: images/ACC-Fm.png  used on input line 381.
+(pdftex.def)             Requested size: 173.80705pt x 137.85591pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 369--371
+Underfull \hbox (badness 10000) in paragraph at lines 391--393
 
  []
 
-[8
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.371 
-      
-pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.371 
-      
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.371 
-      
-pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.371 
-       <./images/FN-FP.png> <./images/PR-RC.png> <./images/ACC-Fm.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 372--374
+[8 <./images/FN-FP.png> <./images/PR-RC.png> <./images/ACC-Fm.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 394--396
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 375--377
+Underfull \hbox (badness 10000) in paragraph at lines 397--399
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 378--380
+Underfull \hbox (badness 10000) in paragraph at lines 400--402
 
  []
 
-<images/radar.png, id=131, 602.0091pt x 497.9403pt>
+<images/radar.png, id=149, 602.0091pt x 497.9403pt>
 File: images/radar.png Graphic file (type png)
 <use images/radar.png>
-Package pdftex.def Info: images/radar.png  used on input line 384.
-(pdftex.def)             Requested size: 469.75502pt x 388.55142pt.
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 389--391
+Package pdftex.def Info: images/radar.png  used on input line 406.
+(pdftex.def)             Requested size: 328.82707pt x 271.98372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 411--413
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 392--394
-
- []
-
-[10
-pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.401 \sout
-           {2. Information about the metrics you will use to compare the per...
- <./images/radar.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 415--416
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 421--426
+[9 <./images/radar.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 414--416
 
  []
 
@@ -612,18 +596,18 @@ Underfull \hbox (badness 7649) in paragraph at lines 4--9
 0 https : / / github . com / martacuevasr / Lab2 _
  []
 
-) [11] (./main.aux)
+[10]) [11] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3C50C22AD4F3407AEB9D41D2281041F1;1564.
+(rerunfilecheck)             Checksum: 128C50C0DF80F2724AF324FD3E80EFD8;1480.
  ) 
 Here is how much of TeX's memory you used:
- 11427 strings out of 476091
- 175715 string characters out of 5794081
- 1868330 words of memory out of 5000000
- 31611 multiletter control sequences out of 15000+600000
- 524112 words of font info for 51 fonts, out of 8000000 for 9000
+ 12827 strings out of 476091
+ 203783 string characters out of 5794081
+ 1867330 words of memory out of 5000000
+ 33000 multiletter control sequences out of 15000+600000
+ 524877 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,10n,76p,771b,509s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,10n,77p,771b,555s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/
 fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
@@ -635,14 +619,15 @@ y10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 onts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm
 -super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb>
 </usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fo
-nts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-
-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb><
-/usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fon
-ts/type1/public/cm-super/sftt1000.pfb>
-Output written on main.pdf (12 pages, 1345562 bytes).
+nts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/public/cm-
+super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb><
+/usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fon
+ts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-s
+uper/sftt1000.pfb>
+Output written on main.pdf (12 pages, 1442925 bytes).
 PDF statistics:
- 234 PDF objects out of 1000 (max. 8388607)
- 174 compressed objects within 2 object streams
+ 256 PDF objects out of 1000 (max. 8388607)
+ 184 compressed objects within 2 object streams
  34 named destinations out of 1000 (max. 500000)
- 111 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 128 words of extra memory for PDF output out of 10000 (max. 10000000)
 

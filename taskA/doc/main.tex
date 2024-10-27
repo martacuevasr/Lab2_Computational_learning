@@ -16,6 +16,7 @@
 \usepackage{booktabs} % Para tablas bonitas
 \usepackage[normalem]{ulem}% para tachar
 \usepackage{amsmath}% formulas
+\usepackage{subcaption}% captions de imagenes
 
 \definecolor{codegreen}{HTML}{5AB2FF}
 \definecolor{morado}{HTML}{AD88C6}
@@ -179,10 +180,10 @@ Overall, the dataset is significantly unbalanced, with a considerable disparity 
 
 \subsection{Metrics Used for Performance Comparison}
 
-In this section, we will explore the various metrics employed to evaluate and compare the performance of different classification methods. Each metric provides insights into the model's strengths and weaknesses, helping us understand how well it performs in various aspects of classification.
+In this section, we will explore the various metrics employed to evaluate and compare the performance of different classification methods \cite{powers2011evaluation, sokolova2009systematic, flach2015evaluation}. Each metric provides insights into the model's strengths and weaknesses, helping us understand how well it performs in various aspects of classification.
 
 \begin{itemize}
-	\item \textbf{Precision (PR)}: Precision is a key metric that measures the accuracy of the positive predictions made by the model. It represents the proportion of True Positives (TP) among all predicted positives, combining both correct and incorrect predictions.
+	\item \textbf{Precision (PR)}: Precision is a key metric that measures the accuracy of the positive predictions made by the model \cite{flach2015evaluation}. It represents the proportion of True Positives (TP) among all predicted positives, combining both correct and incorrect predictions.
 	
 	\[
 	\text{Precision} = \frac{TP}{TP + FP}
@@ -190,7 +191,7 @@ In this section, we will explore the various metrics employed to evaluate and co
 	\textit{Range:} [0, 1]. \\
 	\textit{Better values:} Higher values indicate that a greater proportion of positive predictions are correct, which is desirable in many applications.
 	
-	\item \textbf{Recall (RC)}: Also known as Sensitivity, Recall quantifies the model's ability to identify all relevant instances within the dataset. It is defined as the ratio of True Positives to the total actual positives.
+	\item \textbf{Recall (RC)}: Also known as Sensitivity, Recall quantifies the model's ability to identify all relevant instances within the dataset. It is defined as the ratio of True Positives to the total actual positives \cite{powers2011evaluation}.
 	
 	\[
 	\text{Recall} = \frac{TP}{TP + FN}
@@ -198,7 +199,7 @@ In this section, we will explore the various metrics employed to evaluate and co
 	\textit{Range:} [0, 1]. \\
 	\textit{Better values:} Higher values are preferred, indicating that the model is effective at capturing as many actual positives as possible.
 	
-	\item \textbf{Specificity (SP)}: Specificity assesses how well the model identifies negative instances. It is calculated as the ratio of True Negatives (TN) to the total number of actual negatives.
+	\item \textbf{Specificity (SP)}: Specificity assesses how well the model identifies negative instances. It is calculated as the ratio of True Negatives (TN) to the total number of actual negatives \cite{sokolova2009systematic}.
 	
 	\[
 	\text{Specificity} = \frac{TN}{TN + FP}
@@ -206,7 +207,7 @@ In this section, we will explore the various metrics employed to evaluate and co
 	\textit{Range:} [0, 1]. \\
 	\textit{Better values:} Higher values suggest that the model is proficient at correctly identifying negatives, which is crucial for balanced performance.
 	
-	\item \textbf{False Negative Rate (FNR)}: The False Negative Rate indicates the proportion of actual positives that are incorrectly classified as negatives. It highlights the model's shortcomings in capturing positive instances.
+	\item \textbf{False Negative Rate (FNR)}: The False Negative Rate indicates the proportion of actual positives that are incorrectly classified as negatives. It highlights the model's shortcomings in capturing positive instances \cite{powers2011evaluation}.
 	
 	\[
 	\text{FNR} = \frac{FN}{TP + FN}
@@ -214,7 +215,7 @@ In this section, we will explore the various metrics employed to evaluate and co
 	\textit{Range:} [0, 1]. \\
 	\textit{Better values:} Lower values are preferable, as they suggest that fewer true positives are being missed by the model.
 	
-	\item \textbf{False Positive Rate (FPR)}: This metric quantifies the proportion of actual negatives that are mistakenly classified as positives. Understanding the FPR is important for assessing the model's performance in contexts where false alarms are costly.
+	\item \textbf{False Positive Rate (FPR)}: This metric quantifies the proportion of actual negatives that are mistakenly classified as positives \cite{sokolova2009systematic}. Understanding the FPR is important for assessing the model's performance in contexts where false alarms are costly.
 	
 	\[
 	\text{FPR} = \frac{FP}{FP + TN}
@@ -222,7 +223,7 @@ In this section, we will explore the various metrics employed to evaluate and co
 	\textit{Range:} [0, 1]. \\
 	\textit{Better values:} Lower values are preferred, indicating that the model generates fewer false positives.
 	
-	\item \textbf{Accuracy (ACC)}: Accuracy provides an overall assessment of the model's performance, reflecting the ratio of correctly predicted instances (both TP and TN) to the total instances in the dataset.
+	\item \textbf{Accuracy (ACC)}: Accuracy provides an overall assessment of the model's performance, reflecting the ratio of correctly predicted instances (both TP and TN) to the total instances in the dataset \cite{powers2011evaluation}.
 	
 	\[
 	\text{Accuracy} = \frac{TN + TP}{TP + FN + FP + TN}
@@ -230,7 +231,7 @@ In this section, we will explore the various metrics employed to evaluate and co
 	\textit{Range:} [0, 1]. \\
 	\textit{Better values:} Higher values indicate a more effective model, although accuracy alone may not provide a complete picture in imbalanced datasets.
 	
-	\item \textbf{Spatial Accuracy (S) or Jaccard Index (J)}: This metric evaluates the similarity between the predicted positive instances and the actual positives. It is particularly useful for assessing how well the model performs in terms of agreement with the ground truth.
+	\item \textbf{Spatial Accuracy (S) or Jaccard Index (J)}: This metric evaluates the similarity between the predicted positive instances and the actual positives \cite{sokolova2009systematic}. It is particularly useful for assessing how well the model performs in terms of agreement with the ground truth.
 	
 	\[
 	\text{Jaccard Index} = \frac{TP}{TP + FN + FP}
@@ -238,7 +239,7 @@ In this section, we will explore the various metrics employed to evaluate and co
 	\textit{Range:} [0, 1]. \\
 	\textit{Better values:} Higher values signify better alignment between predicted and actual positives.
 	
-	\item \textbf{F-measure (Fm)}: The F-measure provides a balanced score that incorporates both Precision and Recall. It is defined as the harmonic mean of these two metrics, making it a valuable indicator of model performance.
+	\item \textbf{F-measure (Fm)}: The F-measure provides a balanced score that incorporates both Precision and Recall. It is defined as the harmonic mean of these two metrics, making it a valuable indicator of model performance \cite{powers2011evaluation}.
 	
 	\[
 	\text{F-measure} = \frac{2 \cdot PR \cdot RC}{PR + RC}
@@ -246,6 +247,8 @@ In this section, we will explore the various metrics employed to evaluate and co
 	\textit{Range:} [0, 1]. \\
 	\textit{Better values:} Higher values suggest that the model performs well in both precision and recall, making it effective for a wide range of applications.
 \end{itemize}
+
+
 To provide a concise overview of the metrics described earlier, Table \ref{tab:metrics_summary} summarizes each metric, its definition, range, and whether higher or lower values are preferable. This table serves as a quick reference to understand how these metrics contribute to performance evaluation in classification tasks.
 
 
@@ -305,11 +308,27 @@ To provide a more visually intuitive overview of the data, we will present the m
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\textwidth]{images/heatmap.png}
+	\includegraphics[width=.7\textwidth]{images/heatmap.png}
 	\caption{Heatmap for metrics for each method}
 	\label{fig:heatmap}
 \end{figure}
 
+To further clarify the performance of each method, we will introduce confusion matrices for each one. A confusion matrix offers a detailed view of the classification outcomes, highlighting the distribution of true positives, false positives, false negatives, and true negatives. Ideally, an optimal model will have a high number of true positives and true negatives while minimizing false positives and false negatives. In contrast, a poor-performing model will show high values for false positives and/or false negatives, indicating ineffective classification. Below, we present the confusion matrices for each method to visually compare their performances.
+
+\begin{figure}[H]
+	\centering
+	\subfloat[Method A]{\includegraphics[width=0.3\textwidth]{images/confusion_matrixA}}
+	\hspace{1em}
+	\subfloat[Method B]{\includegraphics[width=0.3\textwidth]{images/confusion_matrixB}}
+	\\
+	\subfloat[Method C]{\includegraphics[width=0.3\textwidth]{images/confusion_matrixC}}
+	\hspace{1em}
+	\subfloat[Method D]{\includegraphics[width=0.3\textwidth]{images/confusion_matrixD}}
+	\hspace{1em}
+	\subfloat[Method E]{\includegraphics[width=0.3\textwidth]{images/confusion_matrixE}}
+	\caption{Confusion matrices for each classification method.}
+	\label{fig:confusion_matrices}
+\end{figure}
 
 \subsection{Performance Analysis}
 
@@ -320,10 +339,10 @@ For each metric, the following analysis highlights the best and worst methods, w
 	The best methods in terms of precision are Methods C and D (0.5000), showing that 50\% of their positive predictions are correct. This is beneficial for scenarios where accurate positive identification is key. Method E, however, scores the lowest (0.0), as it makes no positive predictions.
 	
 	\item \textbf{Recall (RC):} \\
-	Method A achieves the highest recall (1.0000), identifying all actual positives correctly, which is ideal in cases where detecting all positives is essential. Method E performs the worst (0.0), as it fails to classify any positives.
+	Method A achieves the highest recall (1.0000), identifying all actual positives correctly, which is ideal in cases where detecting all positives is essential, but in this case does not mean anything since the model only classifies as positive. Method E performs the worst (0.0), as it fails to classify any positives. 
 	
 	\item \textbf{Specificity (SP):} \\
-	Method E has the highest specificity (1.0000), correctly classifying all negatives without any false positives. This is useful for minimizing false alarms. Method A, by contrast, has the lowest specificity (0.0), as it incorrectly classifies all negatives as positives.
+	Method E has the highest specificity (1.0000), correctly classifying all negatives without any false positives. This is useful for minimizing false alarms. Method A, by contrast, has the lowest specificity (0.0), as it incorrectly classifies all negatives as positives. This is because method E classifies everithing as false and method A as true, which is a extremely bad classification.
 	
 	\item \textbf{False Negative Rate (FNR):} \\
 	Method A has the lowest FNR (0.0), indicating it captures all positives without missing any. In contrast, Method E has the highest FNR (1.0), as it misses all positive cases, leading to poor detection of positives.
@@ -343,30 +362,33 @@ For each metric, the following analysis highlights the best and worst methods, w
 
 \begin{figure}[H]
 	\centering
-	\begin{minipage}{0.45\textwidth}
+	\begin{minipage}{0.37\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{images/FN-FP.png}
 		\caption{False Negatives VS False Positives}
 		\label{fig:FN-FP}
-	\end{minipage}\hfill
-	\begin{minipage}{0.45\textwidth}
+	\end{minipage}
+	\hspace{0.03\textwidth} % Espacio entre imágenes
+	\begin{minipage}{0.37\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{images/PR-RC.png}
 		\caption{Precision VS Recall}
 		\label{fig:PR-RC}
 	\end{minipage}
-	\begin{minipage}{0.45\textwidth}
+	\hspace{0.03\textwidth} % Espacio entre imágenes
+	\begin{minipage}{0.37\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{images/ACC-Fm.png}
 		\caption{Accuracy VS F-measure}
 		\label{fig:ACC-Fm}
-	\end{minipage}\hfill
-
+	\end{minipage}
+	
 	\caption{Comparison of methods}
 	\label{fig:comparison}
 \end{figure}
 
-The FN vs FP plot (\ref{fig:FN-FP}) shows that Method A, with the highest false positives and zero false negatives, favors capturing all positives but at the cost of many false positives. In contrast, Method E has no false positives but misses all positives, resulting in high false negatives. Methods C and D provide a better balance, with lower and relatively similar counts of false positives and false negatives. Among these, Method D appears to offer the best trade-off between reducing both error types.
+
+The FN vs FP plot (\ref{fig:FN-FP}) shows that Method A, with the highest false positives and zero false negatives, favors capturing all positives but at the cost of many false positives. In contrast, Method E has no false positives but misses all positives, resulting in high false negatives. Methods C and D provide a better balance, with lower and relatively similar counts of false positives and false negatives. Among these, Method B appears to offer the best trade-off between reducing both error types.
 \\
 
 In the plot \ref{fig:PR-RC} that shows PR vs RC, Method A achieves high recall with very low precision, while Method E has both values at zero, reflecting its negative-only classification. Method B shows the best balance, with high recall and moderate precision, making it favorable in cases needing high recall. Methods C and D each have a precision of 0.5, but Method D achieves a more balanced performance overall, with equal precision and recall scores.
@@ -381,7 +403,7 @@ To gain a more comprehensive view of each method's strengths and weaknesses, we 
 \begin{figure}[H]
 	
 	\centering
-	\includegraphics[width=\textwidth]{images/radar.png}
+	\includegraphics[width=.7\textwidth]{images/radar.png}
 	\caption{Radar Plot of Classification Metrics}
 	\label{fig:radar}
 \end{figure}
@@ -393,46 +415,20 @@ Overall, the radar plot offers a clear summary of each method’s performance, v
 \\
 
 
-\section{todoList}
-\sout{1. Information about the dataset. Number of samples, number of classes, 
-number of samples per class, if the dataset is balanced or unbalanced…}
-
-
-\sout{2. Information about the metrics you will use to compare the performance 
-	of the methods. Name, what it represents, its definition, range of the 
-	value provided by that metric, if lower/higher values are better…}
-
-
-3. A table with the yielded performance of each method for each metric. 
-You can distribute the methods along the columns and the metrics along 
-the rows. Highlight best results in bold.
-
-
-4. Analysis of the performance. For each metric, describe briefly which 
-method is the best and the worst, and why.
-
-
-5. Conclusion. According to the analysis, determine which method, in general, is the best and why\\
-
-
-
-
-
-following figures: 
-- FN against FP
-- PR against RC
-- ACC against Fm 
-\\
 
 \section{Conclusion}
 In this study, we compared five classification methods (A, B, C, D, and E) based on a set of performance metrics to determine their effectiveness in handling an imbalanced dataset, particularly in the context of disease prediction. The results indicate varying levels of performance across precision, recall, and F-measure, with Method B emerging as the most balanced.
 
 \begin{itemize}
-	\item \textbf{Method B}: Demonstrates the best overall balance across precision, recall, and the F-measure, making it a strong candidate for situations requiring sensitivity to both positive identification and precision.
-	\item \textbf{Method A}: Maximizes recall but at the cost of an extremely high false positive rate, making it unsuitable where specificity is essential.
-	\item \textbf{Method E}: Achieves the highest specificity and minimizes the false positive rate but fails to detect any positives, making it impractical for applications that require positive detection.
-	\item \textbf{Methods C and D}: Strike some balance between precision and specificity but lack the robustness seen in Method B.
+	\item \textbf{Method B}: This method demonstrates the best overall balance across precision, recall, and F-measure, making it the most robust choice for applications that require both accurate positive identification and high precision.
+	
+	\item \textbf{Methods A and E}: These methods lack any meaningful classification capability. Method A only predicts positives and Method E only negatives, rendering both approaches ineffective for distinguishing between classes. Their limited functionality provides no valuable insight or accuracy for balanced classification tasks.
+	
+	\item \textbf{Method C}: This method achieves some balance between precision and specificity, yet it lacks the robustness of Method B due to an excessively high false negative rate.
+	
+	\item \textbf{Method D}: Although this method ranks as the second best, it has a higher false negative rate compared to Method B, which limits its overall effectiveness.
 \end{itemize}
+
 
 
 In summary, Method B is the most effective classification method for this dataset based on its high F-measure, balanced precision, and recall. This approach is recommended for predictive tasks where both the accurate identification of positives and the minimization of false positives are essential, even within an imbalanced dataset context.
