@@ -1,10 +1,36 @@
 \begin{thebibliography}{1}
 
+\bibitem{berrar2019cross}
+Daniel Berrar et~al.
+\newblock Cross-validation., 2019.
+
 \bibitem{cuevas2024github}
 Marta Cuevas.
 \newblock Lab2\_computational\_learning.
 \newblock \url{https://github.com/martacuevasr/Lab2\_Computational\_learning},
   2024.
 \newblock Último acceso: 1 noviembre 2024.
+
+\bibitem{Cunningham2008}
+P{\'a}draig Cunningham, Matthieu Cord, and Sarah~Jane Delany.
+\newblock {\em Supervised Learning}, pages 21--49.
+\newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 2008.
+
+\bibitem{https://doi.org/10.1155/2020/2836236}
+Muhammed~Kürşad Uçar, Majid Nour, Hatem Sindi, and Kemal Polat.
+\newblock The effect of training and testing process on machine learning in
+  biomedical datasets.
+\newblock {\em Mathematical Problems in Engineering}, 2020(1):2836236, 2020.
+
+\bibitem{vaswani2017attention}
+A~Vaswani.
+\newblock Attention is all you need.
+\newblock {\em Advances in Neural Information Processing Systems}, 2017.
+
+\bibitem{wang2003artificial}
+Sun-Chong Wang and Sun-Chong Wang.
+\newblock Artificial neural network.
+\newblock {\em Interdisciplinary computing in java programming}, pages 81--100,
+  2003.
 
 \end{thebibliography}

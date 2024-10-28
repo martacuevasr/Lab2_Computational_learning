@@ -147,23 +147,59 @@ Finally, we will review recent advancements in Deep Learning applied to healthca
 	\item \textbf{Analyze real-world applications of Deep Learning in healthcare}: Review case studies where Deep Learning has been successfully applied in the medical field, such as diagnostics and predictive models for disease progression, highlighting its potential to transform patient care.
 \end{itemize}
 
-\section{Methodology and Results}
 
-LAS PREGUNTAS QUE PONE EL PROFE A RESOLVER MEDIO RESUELTAS
-- When developing a supervised method, why do we need to split the dataset into training and test sets? para obtener metricas de como funciona muestro modelo con datos con los que no ha sido entrenados porque sino no seria una comparación honesta
-- What is cross-validation? para que sea honesta la estimacion de la performance
-- What is artificial neural networks? pue rede neuronales artificiales. inserta textaco y citas
-- What is Deep Learning (DL)? lo mismo pero con muchos datos y a lo mejor modelos mas buenos tipo transformers  y esas cosas
-- What is new in DL models with respect to traditional feedforward neural networks? supongo que los modelos son mas complejos pero ni idea
+
+\section{Supervised Learning}
+
+Supervised learning is a foundational approach within machine learning, widely researched and applied across various fields, including multimedia content processing. The core feature that distinguishes supervised learning is its use of annotated training data, where each example is paired with a known label, often representing a class in classification tasks. This setup is akin to having a “supervisor” guiding the learning system by providing correct associations for each training sample \cite{Cunningham2008}. 
+
+Through supervised learning algorithms, models are derived from the training data to enable the classification of new, unlabeled examples. These models are trained with the aim of minimizing prediction errors—a concept underpinned by the theory of risk minimization. Techniques such as support vector machines and nearest neighbor classifiers, two highly popular algorithms in multimedia and other domains, exemplify the methods utilized to implement supervised learning, as they effectively leverage labeled data to create accurate and adaptable models \cite{Cunningham2008}.\\
+
+\subsection{Importance of Dataset Splitting in Supervised Learning}
+
+Dividing a dataset into training and test sets is a critical step in developing supervised learning models, especially in fields such as biomedical classification. This separation ensures that the model's performance is evaluated on data it has not encountered before, providing an honest assessment of its generalization ability \cite{https://doi.org/10.1155/2020/2836236}. Careful consideration of sampling methods during the training and testing stages directly impacts the system's stability and performance, as inappropriate sample selection can lead to misleading evaluations and potential overfitting.
+
+
+\subsection{Cross-Validation in Model Evaluation and Selection}
+
+Cross-validation is a widely-used data resampling technique in model evaluation and selection, serving multiple purposes, including hyperparameter tuning, preventing overfitting, and estimating the generalization error of predictive models. By partitioning the dataset into multiple subsets or "folds," cross-validation allows a model to train on various splits and validate on the remaining portions, leading to a more reliable performance estimate \cite{berrar2019cross}.
+
+Among the most common cross-validation methods are k-fold cross-validation, leave-one-out cross-validation (LOOCV), and nested cross-validation. In particular, nested cross-validation is valuable for tuning hyperparameters, as it involves two layers of cross-validation: the outer loop for testing and the inner loop for training and validation. This approach is especially beneficial in complex models where a single validation loop might underestimate the generalization error.
+
+Cross-validation is crucial for enhancing models, particularly by mitigating overfitting and enabling robust comparisons among learning algorithms. In deep learning, however, standard cross-validation is less common due to the high computational cost. Instead, methods such as single hold-out validation or using a dedicated validation set within an iterative training process are more frequently used, allowing large models to be evaluated without prohibitive resource requirements \cite{berrar2019cross}.Cross-validation is less commonly used in deep learning due to the high computational costs, especially with large datasets and deep networks. Instead, deep learning models often use a fixed validation set, allowing for efficient hyperparameter tuning and performance evaluation without the resource demands of full cross-validation.
+
+
+\subsection{Artificial Neural Networks}
+
+Artificial Neural Networks (ANNs) are computational models inspired by the complex structure and functioning of the human brain, where billions of interconnected neurons process information simultaneously. Just as the brain can recognize patterns, make decisions, and process language, ANNs have been developed to perform tasks like language translation, image recognition, and time series forecasting. ANNs operate as universal function approximators, meaning they can map input data to outputs in a highly flexible manner, making them suitable for a wide variety of applications \cite{wang2003artificial}.
+
+An ANN consists of multiple layers of artificial neurons or nodes, which are organized in an architecture of interconnected layers. These layers typically include an input layer, one or more hidden layers, and an output layer. Each neuron in a given layer processes the input it receives, applies a weighted sum and an activation function, and passes the output to the next layer. Through training, these weights are adjusted to minimize the difference between the network’s prediction and the true output, allowing the ANN to "learn" patterns in data.
+
+
+
+
+
+\section{Deep learning}
+- What is Deep Learning (DL)? lo mismo pero con muchos datos y a lo mejor modelos mas buenos tipo transformers  y esas cosas\\
+
+- What is new in DL models with respect to traditional feedforward neural networks? supongo que los modelos son mas complejos pero ni idea\\
+
+\textbf{
+tienes q hablar de transformers si o si de este trabajo:\cite{vaswani2017attention}
+}
+y ya si quieres de cnn o rnn nose q mas\\
+
 - Google (among others) has produced astonishing results in the 
-application of DL models in different domains. Mention two of these cases describing shortly the problem solved. \textbf{Alphafold Gemini} inserta textaco y referenxias
-- What is overfitting and how DL models avoid it? es cuando tu modelo deja de generalizar y se aprende los datos concretos con los que se alimenta y hace que no sirva para nada. se soluciona con muchos datos diferentes, o capas de normalizacion y esa vaina
+application of DL models in different domains. Mention two of these cases describing shortly the problem solved. \textbf{Alphafold Gemini} inserta textaco y referenxias\\
+
+- What is overfitting and how DL models avoid it? es cuando tu modelo deja de generalizar y se aprende los datos concretos con los que se alimenta y hace que no sirva para nada. se soluciona con muchos datos diferentes, o capas de normalizacion y esa vaina\\
+
 - Lack of data is a big limitation regarding the application of DL 
 models to biomedical problems. What techniques can be applied 
 to alleviate this problem.
 
 data augmentation techniques. pues cosas de estadistica o darle la vuelta a las imagenes o generar datos con otra ia . por ejemplo la adversative neural network q dijo el profe que creo que enfrenta a dos nn a ver cual inventa cosas mejor
-\section{Conclusion}
+
 
 
 \section{Repository Access}

@@ -3,44 +3,46 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main_taskB.aux
 The style file: plain.bst
 Database file #1: bibli.bib
-You've used 1 entry,
+Warning--can't use both author and editor fields in Cunningham2008
+You've used 6 entries,
             2118 wiz_defined-function locations,
-            503 strings with 4158 characters,
-and the built_in function-call counts, 237 in all, are:
-= -- 22
-> -- 7
-< -- 0
-+ -- 3
-- -- 2
-* -- 8
-:= -- 46
-add.period$ -- 4
-call.type$ -- 1
-change.case$ -- 4
+            535 strings with 5007 characters,
+and the built_in function-call counts, 1891 in all, are:
+= -- 184
+> -- 81
+< -- 2
++ -- 33
+- -- 26
+* -- 111
+:= -- 313
+add.period$ -- 18
+call.type$ -- 6
+change.case$ -- 29
 chr.to.int$ -- 0
-cite$ -- 1
-duplicate$ -- 7
-empty$ -- 23
-format.name$ -- 2
-if$ -- 49
+cite$ -- 7
+duplicate$ -- 73
+empty$ -- 154
+format.name$ -- 26
+if$ -- 404
 int.to.chr$ -- 0
-int.to.str$ -- 1
-missing$ -- 0
-newline$ -- 9
-num.names$ -- 2
-pop$ -- 8
+int.to.str$ -- 6
+missing$ -- 5
+newline$ -- 33
+num.names$ -- 12
+pop$ -- 40
 preamble$ -- 1
-purify$ -- 3
+purify$ -- 24
 quote$ -- 0
-skip$ -- 6
+skip$ -- 62
 stack$ -- 0
-substring$ -- 5
-swap$ -- 1
-text.length$ -- 0
+substring$ -- 103
+swap$ -- 21
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 4
-warning$ -- 0
-while$ -- 2
-width$ -- 2
-write$ -- 14
+type$ -- 22
+warning$ -- 1
+while$ -- 19
+width$ -- 7
+write$ -- 66
+(There was 1 warning)
