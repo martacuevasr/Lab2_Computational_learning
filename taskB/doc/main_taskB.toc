@@ -5,4 +5,8 @@
 \contentsline {subsection}{\numberline {2.2}Cross-Validation in Model Evaluation and Selection}{3}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Artificial Neural Networks}{3}{subsection.2.3}%
 \contentsline {section}{\numberline {3}Deep learning}{4}{section.3}%
-\contentsline {section}{\numberline {4}Repository Access}{4}{section.4}%
+\contentsline {subsection}{\numberline {3.1}DL Models VS Traditional Feedforward Neural Networks}{4}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Remarkable Applications of DL Models by Google}{4}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Overfitting in DL Models}{5}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Addressing Data Scarcity in Biomedical Applications}{5}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Repository Access}{5}{section.4}%

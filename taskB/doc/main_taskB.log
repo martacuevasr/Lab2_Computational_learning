@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.9.27)  28 OCT 2024 13:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.9.27)  29 OCT 2024 14:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -340,7 +340,7 @@ Package hyperref Info: Link coloring OFF on input line 88.
 \openout3 = `main_taskB.out'.
 
 \c@lstlisting=\count290
-<images/uma_logo.jpg, id=36, 965.6075pt x 965.6075pt>
+<images/uma_logo.jpg, id=52, 965.6075pt x 965.6075pt>
 File: images/uma_logo.jpg Graphic file (type jpg)
 <use images/uma_logo.jpg>
 Package pdftex.def Info: images/uma_logo.jpg  used on input line 104.
@@ -369,23 +369,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 156--157
  []
 
 
-Overfull \hbox (9.24278pt too wide) in paragraph at lines 167--168
+Underfull \hbox (badness 10000) in paragraph at lines 165--167
+
+ []
+
+
+Overfull \hbox (9.24278pt too wide) in paragraph at lines 168--170
 []\T1/cmr/m/n/10 Among the most com-mon cross-validation meth-ods are k-fold cr
 oss-validation, leave-one-out cross-validation
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--170
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--178
+
+ []
+
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 183--184
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 185--186
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 189--191
+Underfull \hbox (badness 10000) in paragraph at lines 186--188
 
  []
 
@@ -395,11 +400,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 192--194
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--196
+Underfull \hbox (badness 10000) in paragraph at lines 207--209
 
  []
 
-(./main_taskB.bbl
+[4] (./main_taskB.bbl
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
 0.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
@@ -410,18 +415,18 @@ Underfull \hbox (badness 7649) in paragraph at lines 8--13
 0 https : / / github . com / martacuevasr / Lab2 _
  []
 
-) [4] (./main_taskB.aux)
+[5]) [6] (./main_taskB.aux)
 Package rerunfilecheck Info: File `main_taskB.out' has not changed.
-(rerunfilecheck)             Checksum: 5A6C92928BF2A49BC204D2D8F657F04A;1453.
+(rerunfilecheck)             Checksum: 5EFD768CC8AE6919E84EDE211D84FCDA;2609.
  ) 
 Here is how much of TeX's memory you used:
- 10528 strings out of 476091
- 163376 string characters out of 5794081
+ 10542 strings out of 476091
+ 163598 string characters out of 5794081
  1861330 words of memory out of 5000000
- 30759 multiletter control sequences out of 15000+600000
+ 30765 multiletter control sequences out of 15000+600000
  522018 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,5n,76p,875b,472s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,5n,76p,875b,548s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/
 fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf/fonts/type1/public/
 cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pf
@@ -432,10 +437,10 @@ m-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb
 onts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm
 -super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
 
-Output written on main_taskB.pdf (5 pages, 1078932 bytes).
+Output written on main_taskB.pdf (7 pages, 1085825 bytes).
 PDF statistics:
- 148 PDF objects out of 1000 (max. 8388607)
- 117 compressed objects within 2 object streams
- 21 named destinations out of 1000 (max. 500000)
- 70 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 183 PDF objects out of 1000 (max. 8388607)
+ 150 compressed objects within 2 object streams
+ 29 named destinations out of 1000 (max. 500000)
+ 102 words of extra memory for PDF output out of 10000 (max. 10000000)
 
