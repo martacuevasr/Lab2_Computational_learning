@@ -4,6 +4,11 @@
 Daniel Berrar et~al.
 \newblock Cross-validation., 2019.
 
+\bibitem{buscemi2024chatgpt}
+Alessio Buscemi and Daniele Proverbio.
+\newblock Chatgpt vs gemini vs llama on multilingual sentiment analysis.
+\newblock {\em arXiv preprint arXiv:2402.01715}, 2024.
+
 \bibitem{cuevas2024github}
 Marta Cuevas.
 \newblock Lab2\_computational\_learning.
@@ -15,12 +20,6 @@ Marta Cuevas.
 P{\'a}draig Cunningham, Matthieu Cord, and Sarah~Jane Delany.
 \newblock {\em Supervised Learning}, pages 21--49.
 \newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 2008.
-
-\bibitem{gulshan2016development}
-V~Gulshan, L~Peng, M~Coram, P~M Charles, J~Deng, and et~al.
-\newblock Development and validation of a deep learning algorithm for detection
-  of diabetic retinopathy in retinal fundus photographs.
-\newblock {\em JAMA}, 316(2):240--250, 2016.
 
 \bibitem{jumper2021highly}
 John Jumper, Richard Evans, Alexander Pritzel, Tim Green, Mikhail Figurnov,

@@ -10,43 +10,43 @@ I'm skipping whatever remains of this entry
 Warning--can't use both author and editor fields in Cunningham2008
 You've used 8 entries,
             2118 wiz_defined-function locations,
-            549 strings with 5526 characters,
-and the built_in function-call counts, 2921 in all, are:
-= -- 278
-> -- 167
+            546 strings with 5436 characters,
+and the built_in function-call counts, 2704 in all, are:
+= -- 258
+> -- 147
 < -- 2
-+ -- 67
-- -- 58
-* -- 209
-:= -- 495
++ -- 59
+- -- 50
+* -- 178
+:= -- 461
 add.period$ -- 24
 call.type$ -- 8
-change.case$ -- 50
+change.case$ -- 46
 chr.to.int$ -- 0
 cite$ -- 9
-duplicate$ -- 95
-empty$ -- 207
-format.name$ -- 58
-if$ -- 599
+duplicate$ -- 94
+empty$ -- 197
+format.name$ -- 50
+if$ -- 559
 int.to.chr$ -- 0
 int.to.str$ -- 8
 missing$ -- 7
 newline$ -- 43
 num.names$ -- 16
-pop$ -- 57
+pop$ -- 55
 preamble$ -- 1
-purify$ -- 43
+purify$ -- 39
 quote$ -- 0
-skip$ -- 77
+skip$ -- 78
 stack$ -- 0
-substring$ -- 163
+substring$ -- 138
 swap$ -- 23
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 30
 warning$ -- 1
-while$ -- 27
+while$ -- 25
 width$ -- 9
-write$ -- 88
+write$ -- 87
 (There was 1 error message)

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.9.27)  29 OCT 2024 14:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.9.27)  29 OCT 2024 15:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -406,11 +406,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 207--209
 
 [4] (./main_taskB.bbl
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
-0.
+5.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
-Underfull \hbox (badness 7649) in paragraph at lines 8--13
+Underfull \hbox (badness 7649) in paragraph at lines 13--18
 []\T1/cmr/m/n/10 Marta Cuevas.  Lab2_computational_learning.  []$\T1/cmtt/m/n/1
 0 https : / / github . com / martacuevasr / Lab2 _
  []
@@ -421,12 +421,12 @@ Package rerunfilecheck Info: File `main_taskB.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  10542 strings out of 476091
- 163598 string characters out of 5794081
+ 163590 string characters out of 5794081
  1861330 words of memory out of 5000000
  30765 multiletter control sequences out of 15000+600000
  522018 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,5n,76p,875b,548s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,5n,76p,875b,550s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/
 fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf/fonts/type1/public/
 cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pf
@@ -437,7 +437,7 @@ m-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb
 onts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm
 -super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
 
-Output written on main_taskB.pdf (7 pages, 1085825 bytes).
+Output written on main_taskB.pdf (7 pages, 1088874 bytes).
 PDF statistics:
  183 PDF objects out of 1000 (max. 8388607)
  150 compressed objects within 2 object streams
